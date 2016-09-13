@@ -334,6 +334,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
             if (success) {
                 Intent i = new Intent(LoginActivity.this, HomeScreenActivity.class);
+                i.putExtra("logonid", mEmail);
                 startActivity(i);
                 finish();
             } else {

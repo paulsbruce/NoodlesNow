@@ -35,8 +35,10 @@ public class ExampleInstrumentedTest {
 
         onView(withId(R.id.email))
                 .perform(click(), clearText(), typeText("me@paulsbruce.io"));
+
         onView(withId(R.id.password))
                 .perform(click(),clearText(),typeText("12345"));
+
         onView(withId(R.id.email_sign_in_button))
                 .perform(click());
 
