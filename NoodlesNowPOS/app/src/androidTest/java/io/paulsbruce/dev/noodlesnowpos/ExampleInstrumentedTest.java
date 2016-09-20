@@ -33,6 +33,7 @@ public class ExampleInstrumentedTest {
     @Test
     public void login() throws Exception {
 
+
         onView(withId(R.id.email))
                 .perform(click(), clearText(), typeText("me@paulsbruce.io"));
 
